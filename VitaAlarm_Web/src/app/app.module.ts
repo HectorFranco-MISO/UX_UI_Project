@@ -10,12 +10,20 @@ import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { ButtonModule } from 'primeng/button';
 import { DividerModule } from 'primeng/divider';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { SideBarComponent } from './shared/side-bar/side-bar.component';
+import { SidebarModule } from 'primeng/sidebar';
+import { PanelMenuModule } from 'primeng/panelmenu';
+import { CalendarModule } from 'primeng/calendar';
+import { InputSwitchModule } from 'primeng/inputswitch';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavBarComponent
+    NavBarComponent,
+    DashboardComponent,
+    SideBarComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +33,12 @@ import { DividerModule } from 'primeng/divider';
     PasswordModule,
     ButtonModule,
     FormsModule,
-    DividerModule
+    DividerModule,
+    SidebarModule,
+    PanelMenuModule,
+    CalendarModule,
+    InputSwitchModule
+
 
   ],
   providers: [],

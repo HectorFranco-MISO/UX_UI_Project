@@ -19,6 +19,10 @@
     .vitalarm {
       max-height: 42px;
     }
+
+    &.hidden {
+      visibility: hidden;
+    }
   }
 
   &__menu {
@@ -28,11 +32,15 @@
     gap: 42px;
 
     .language {
-      max-height: 42px;
-    }
-    .user{
-      max-height: 60px;
+      margin-top: 6px;
+
+      img {
+        max-height: 40px;
+      }
     }
 
+    .user {
+      max-height: 60px;
+    }
   }
 }
