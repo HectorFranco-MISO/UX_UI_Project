@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --blue-main: #3252F6;
+    --blue-dark: #0017C1;
+    --blue-light: #7A8BFC;
+    --blue-extra-light: #C9CDFD;
+    --yellow-main: #FFAE00;
+    --yellow-dark: #FE8A04;
+    --yellow-light: #FFD14D;
+    --yellow-extra-light: #FFEAB2;
+    --gray-main: #5E5E5F;
+    --gray-dark: #1E1E1F;
+    --gray-light: #BABABB;
+    --gray-extra-light: #ECECED;
+    --warning: #B3261E;
+    --success: #009F75;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: var(--gray-main);
+    margin: 0;
+}
+
+button {
+    all: unset;
+    display: inline-block;
+    cursor: pointer;
+}
+
+a {
+    all: unset;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
