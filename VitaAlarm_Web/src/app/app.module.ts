@@ -16,6 +16,9 @@ import { SidebarModule } from 'primeng/sidebar';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { CalendarModule } from 'primeng/calendar';
 import { InputSwitchModule } from 'primeng/inputswitch';
+import { AiAlarmsComponent } from './pages/ai-alarms/ai-alarms.component';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +26,8 @@ import { InputSwitchModule } from 'primeng/inputswitch';
     HomeComponent,
     NavBarComponent,
     DashboardComponent,
-    SideBarComponent
+    SideBarComponent,
+    AiAlarmsComponent
   ],
   imports: [
     BrowserModule,
@@ -37,9 +41,8 @@ import { InputSwitchModule } from 'primeng/inputswitch';
     SidebarModule,
     PanelMenuModule,
     CalendarModule,
-    InputSwitchModule
-
-
+    InputSwitchModule,
+    InputTextareaModule
   ],
   providers: [],
   bootstrap: [AppComponent],

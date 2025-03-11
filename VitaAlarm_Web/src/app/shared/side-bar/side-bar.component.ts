@@ -12,7 +12,7 @@ export class SideBarComponent {
 
   menuItems = [
     { label: 'Escritorio', icon: 'pi pi-pencil', path: '/escritorio' },
-    { label: 'Alarmas inteligentes', icon: 'pi pi-microchip', path: '/alarmas' },
+    { label: 'Alarmas inteligentes', icon: 'pi pi-microchip', path: '/alarmas-ia' },
     { label: 'Integración e-mail', icon: 'pi pi-envelope', path: '/email' },
     { label: 'Gestionar perfiles', icon: 'pi pi-users', path: '/perfiles' }
   ];
