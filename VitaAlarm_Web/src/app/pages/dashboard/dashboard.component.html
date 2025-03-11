@@ -1,0 +1,50 @@
+<div class="dashboard__container">
+    <app-nav-bar [isLoggedIn]="true"></app-nav-bar>
+
+    <div class="dashboard__content">
+        <app-side-bar></app-side-bar>
+        <section>
+
+            <article class="dashboard__alarms">
+                <h2 class="dashboard__title">Alarmas</h2>
+                <p>Revisa las alarmas que tienes configuradas en tu dispositivo móvil.</p>
+
+                <div class="dashboard__alarms__container">
+                    <div class="calendar">
+                        <p-calendar [(ngModel)]="selectedDate" [inline]="true" [style]="{ width: '90%', height: '350px'
+                         }"></p-calendar>
+
+                    </div>
+                    <div class="alarms__list">
+                        <div *ngFor="let alarm of alarms" class="alarm">
+                            <h4>{{ alarm.title }}</h4>
+                            <p class="hour">{{ alarm.hour }}</p>
+                            <p>{{ alarm.days }}</p>
+
+                            <p-inputSwitch [(ngModel)]="alarm.active" class="toggle-switch"></p-inputSwitch>
+                        </div>
+                    </div>
+                </div>
+                <button class="fab" (click)="addAlarm()">+</button>
+            </article>
+
+            <article class="dashboard__profiles">
+                <div class="dashboard__profiles__header">
+                    <h2 class="dashboard__title">Tus perfiles</h2>
+                    <p-button icon="pi pi-arrow-right" class="button-rounded"></p-button>
+                </div>
+
+                <div *ngFor="let card of profileCards" class="profile__card" [ngClass]="{ 'active': card.active }">
+                    <div class="image">{{ card.image }}</div>
+                    <div class="text">
+                        <p class="title">{{ card.title }}</p>
+                        <p>{{ card.description }}</p>
+                    </div>
+                    <p *ngIf="card.active" class="active">Perfil activo</p>
+                </div>
+
+            </article>
+
+        </section>
+    </div>
+</div>

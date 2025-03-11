@@ -1,5 +1,5 @@
 <section class="nav-bar">
-    <button class="nav-bar__logo" *ngIf="!isLoggedIn">
+    <button class="nav-bar__logo" [ngClass]="{'hidden': isLoggedIn}">
         <img class="logo" src="../../../../assets/logo.svg" alt="">
         <img class="vitalarm" src="../../../../assets/vitalarm.svg" alt="">
     </button>
