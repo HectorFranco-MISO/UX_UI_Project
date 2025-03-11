@@ -1,0 +1,37 @@
+<div>
+    <app-nav-bar [register]="true"></app-nav-bar>
+
+    <section class="register">
+        <button class="back-button" (click)="goBack()">
+            <i class="pi pi-arrow-left"></i> Atrás
+        </button>
+
+        <h2>Registro</h2>
+
+        <article class="register__form">
+            <form class="form">
+
+                <div class="field">
+                    <label for="nombre">¿Cómo te llamas?</label>
+                    <input id="nombre" pInputText type="text" placeholder="Miguel Martínez">
+                </div>
+
+                <div class="field">
+                    <label for="password">Asigna una contraseña</label>
+                    <p-password id="password" [(ngModel)]="password" [toggleMask]="true" placeholder="Alemania2025*"
+                        class="full-width"></p-password>
+                </div>
+
+                <div class="field">
+                    <label for="password">Confirma la contraseña</label>
+                    <p-password id="password" [toggleMask]="true" placeholder="Alemania2025*"
+                        class="full-width"></p-password>
+                </div>
+
+                <p-button label="Registrarse" class="button" [routerLink]="'/escritorio'"></p-button>
+
+            </form>
+
+        </article>
+    </section>
+</div>

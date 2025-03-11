@@ -1,0 +1,47 @@
+<div>
+    <app-nav-bar [register]="true"></app-nav-bar>
+
+    <section class="register">
+
+        <article class="register__form">
+            <h2>Registro</h2>
+            <form class="form">
+
+                <div class="field">
+                    <label for="nombre">Correo electrónico</label>
+                    <input id="nombre" pInputText type="text" placeholder="miguelmartinez@gmail.com">
+                </div>
+
+
+                <p-button label="Continuar con correo" class="button" [routerLink]="'/registro-correo'"></p-button>
+
+                <p-divider [align]="'center'">
+                    <div class="p-text-secondary">O regístrate con:</div>
+                </p-divider>
+
+                <div class="social">
+                    <button [routerLink]="'/registro-social'">
+                        <img src="../../../assets/facebook.svg" alt="">
+                    </button>
+                    <button [routerLink]="'/registro-social'">
+                        <img src="../../../assets/google.svg" alt="">
+                    </button>
+                </div>
+
+
+                <a href="/">
+                    ¿Ya tienes una cuenta? <span class="register-link">Inicia sesión</span>
+                </a>
+            </form>
+
+
+        </article>
+
+        <article class="register__content">
+            <img src="../../../assets/register.svg" alt="">
+
+            <h3>Un paso más hacia tu mejor versión. Regístrate y optimiza tu tiempo con nuestras alarmas inteligentes..
+            </h3>
+        </article>
+    </section>
+</div>
