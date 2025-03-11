@@ -1,0 +1,14 @@
+<section class="nav-bar">
+    <button class="nav-bar__logo" *ngIf="!isLoggedIn">
+        <img class="logo" src="../../../../assets/logo.svg" alt="">
+        <img class="vitalarm" src="../../../../assets/vitalarm.svg" alt="">
+    </button>
+    <div class="nav-bar__menu" *ngIf="isLoggedIn">
+        <button class="language">
+            <img src="../../../../assets/language.svg" alt="">
+        </button>
+        <button class="user">
+            <img src="../../../../assets/user.svg" alt="">
+        </button>
+    </div>
+</section>
