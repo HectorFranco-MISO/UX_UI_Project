@@ -13,22 +13,35 @@
 
                 <div class="field">
                     <label for="nombre">¿Cómo te llamas?</label>
-                    <input id="nombre" pInputText type="text" placeholder="Miguel Martínez">
+                    <input id="nombre" [(ngModel)]="name" name="name" pInputText type="text" placeholder="Miguel Martínez">
+                    <!-- Mensaje de error si las contraseñas no coinciden -->
+                    <p class="error-text" *ngIf="name.length < 5">
+                        Debes ingresar tu nombre para registrarte
+                    </p>
                 </div>
 
                 <div class="field">
                     <label for="password">Asigna una contraseña</label>
-                    <p-password id="password" [(ngModel)]="password" [toggleMask]="true" placeholder="Alemania2025*"
+                    <p-password id="password" [(ngModel)]="password" name="password"  [toggleMask]="true" placeholder="Alemania2025*"
                         class="full-width"></p-password>
                 </div>
 
                 <div class="field">
-                    <label for="password">Confirma la contraseña</label>
-                    <p-password id="password" [toggleMask]="true" placeholder="Alemania2025*"
-                        class="full-width"></p-password>
+                    <label for="confirmPassword">Confirma la contraseña</label>
+                    <p-password id="confirmPassword" [(ngModel)]="confirmPassword" name="confirmPassword" 
+                        [toggleMask]="true" placeholder="Alemania2025*" class="full-width"></p-password>
+
+                    <!-- Mensaje de error si las contraseñas no coinciden -->
+                    <p class="error-text" *ngIf="password && confirmPassword && password !== confirmPassword">
+                        Las contraseñas no coinciden.
+                    </p>
                 </div>
 
-                <p-button label="Registrarse" class="button" [routerLink]="'/escritorio'"></p-button>
+                <!-- Botón de registro deshabilitado si las contraseñas no coinciden -->
+                <p-button label="Registrarse" class="button" 
+                    [disabled]="!password || !confirmPassword || password !== confirmPassword || name.length < 5"
+                     (click)="register()">
+                </p-button>
 
             </form>
 
