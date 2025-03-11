@@ -18,6 +18,9 @@ import { CalendarModule } from 'primeng/calendar';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { AiAlarmsComponent } from './pages/ai-alarms/ai-alarms.component';
 import { InputTextareaModule } from 'primeng/inputtextarea';
+import { RegisterComponent } from './pages/register/register.component';
+import { RegisterEmailComponent } from './pages/register-email/register-email.component';
+import { RegisterSocialComponent } from './pages/register-social/register-social.component';
 
 
 @NgModule({
@@ -27,7 +30,10 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
     NavBarComponent,
     DashboardComponent,
     SideBarComponent,
-    AiAlarmsComponent
+    AiAlarmsComponent,
+    RegisterComponent,
+    RegisterEmailComponent,
+    RegisterSocialComponent
   ],
   imports: [
     BrowserModule,
