@@ -73,11 +73,10 @@
             android:layout_width="200dp"
             android:layout_height="55dp"
             android:text="Registrarse"
-            android:background="@android:color/transparent"
-            android:textColor="@color/yellow_main"
+            style="@style/YellowOutlinedButton"
+            android:layout_marginTop="12dp"
             app:layout_constraintTop_toBottomOf="@id/btn_login"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="12dp" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
