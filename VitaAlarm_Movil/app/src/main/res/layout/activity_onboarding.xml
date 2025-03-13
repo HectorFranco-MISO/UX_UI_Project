@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/onboardingActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- Sección del avatar y nombre del usuario -->
+    <LinearLayout
+        android:id="@+id/userSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/userAvatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_avatar"
+            android:contentDescription="Avatar del usuario"
+            android:layout_marginEnd="12dp"
+            android:scaleType="centerCrop"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Juan Camilo Pérez"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/gray_dark"
+            android:layout_marginRight="55dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/vitalarm"
+        android:contentDescription="Logo de la aplicación"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Mensaje de bienvenida -->
+
+    <!-- Espaciador para empujar el menú abajo -->
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:lineSpacingExtra="8dp"
+        android:text="Bienvenido a la mejor aplicación para potenciar tu productividad y buen vivir."
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Menú inferior siempre en la parte baja -->
+    <include layout="@layout/bottom_menu"/>
+
+</LinearLayout>
