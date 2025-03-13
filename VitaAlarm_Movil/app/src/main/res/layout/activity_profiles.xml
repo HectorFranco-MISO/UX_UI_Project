@@ -39,21 +39,13 @@
                 android:paddingStart="10dp"/>
         </LinearLayout>
 
-        <!-- Botón "Atrás" -->
-        <include
-            layout="@layout/back_button"
-            android:id="@+id/btnBackProfiles"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"/> <!-- Margen superior para separarlo del encabezado -->
-
         <!-- Lista de Perfiles -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewProfiles"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:paddingTop="16dp"
+            android:paddingTop="20dp"
             tools:listitem="@layout/item_profile" />
     </LinearLayout>
 
