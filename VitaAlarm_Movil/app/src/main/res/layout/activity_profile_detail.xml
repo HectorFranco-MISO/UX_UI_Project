@@ -1,0 +1,100 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/detailProfile"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Encabezado -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/ic_profiles"
+                app:tint="@color/yellow_dark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mis perfiles"
+                android:textColor="@color/yellow_main"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:paddingStart="10dp"/>
+        </LinearLayout>
+
+        <!-- Botón "Atrás" -->
+        <include
+            layout="@layout/back_button"
+            android:id="@+id/btnBackProfileDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Contenedor de perfil seleccionado -->
+        <include
+            layout="@layout/item_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Información adicional -->
+
+        <!-- Botones -->
+        <TextView
+            android:id="@+id/txtProfileDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:text="Activar perfil"
+                android:backgroundTint="@color/blue_main"
+                android:textColor="@android:color/white"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_register"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@android:color/transparent"
+                android:text="Eliminar perfil"
+                android:textColor="@color/yellow_main"
+                app:cornerRadius="24dp"
+                app:strokeColor="@color/yellow_main"
+                app:strokeWidth="2dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- Menú inferior -->
+    <include
+        layout="@layout/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,10 +1,10 @@
 package co.edu.uniandes.misw4203.vitaalarm_movil
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.activity.OnBackPressedCallback
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -28,14 +28,20 @@ class ProfilesActivity : FragmentActivity() {
         // Configurar RecyclerView
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerViewProfiles)
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = ProfileAdapter(profiles)
+
+        // Configurar el adaptador con un listener para manejar el clic en las cards
+        val adapter = ProfileAdapter(profiles) { profile ->
+            // Abrir ProfileDetailActivity con la información del perfil seleccionado
+            val intent = Intent(this, ProfileDetailActivity::class.java).apply {
+                putExtra("profileTitle", profile.title) // Pasar el título como identificador
+            }
+            startActivity(intent)
+        }
+        recyclerView.adapter = adapter
 
         // Cambiar colores del menú inferior
         updateMenuColors()
-
     }
-
-
 
     private fun updateMenuColors() {
         val iconHeader = findViewById<ImageView>(R.id.iconHeader)
