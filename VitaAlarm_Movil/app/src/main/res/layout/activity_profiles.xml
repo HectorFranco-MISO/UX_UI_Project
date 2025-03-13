@@ -1,0 +1,77 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilesActivity">
+
+    <!-- Contenido principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Encabezado -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iconHeader"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/ic_profiles"
+                app:tint="@color/yellow_dark" />
+
+            <TextView
+                android:id="@+id/textHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mis perfiles"
+                android:textColor="@color/yellow_main"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:paddingStart="10dp"/>
+        </LinearLayout>
+
+        <!-- Botón "Atrás" -->
+        <include
+            layout="@layout/back_button"
+            android:id="@+id/btnBackProfiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/> <!-- Margen superior para separarlo del encabezado -->
+
+        <!-- Lista de Perfiles -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewProfiles"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            tools:listitem="@layout/item_profile" />
+    </LinearLayout>
+
+    <!-- Botón flotante -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="72dp"
+        android:layout_marginEnd="16dp"
+        app:backgroundTint="@color/blue_light"
+        app:srcCompat="@drawable/addbtn"
+        app:tint="@color/white"/>
+
+    <!-- Menú inferior personalizado -->
+    <include
+        layout="@layout/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
