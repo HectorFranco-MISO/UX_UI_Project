@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/white"
@@ -19,11 +19,14 @@
         android:padding="5dp">
 
         <ImageView
+            android:id="@+id/iconMisPerfiles"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/ic_profiles" />
+            android:src="@drawable/ic_profiles"
+            app:tint="@color/gray_dark" />
 
         <TextView
+            android:id="@+id/textMisPerfiles"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mis perfiles"
@@ -41,11 +44,13 @@
         android:padding="5dp">
 
         <ImageView
+            android:id="@+id/iconIntegraciones"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/ic_integrations" />
 
         <TextView
+            android:id="@+id/textIntegraciones"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Integraciones"
@@ -63,11 +68,13 @@
         android:padding="5dp">
 
         <ImageView
+            android:id="@+id/iconAI"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/ic_ai" />
 
         <TextView
+            android:id="@+id/textAI"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="AI"
@@ -85,11 +92,13 @@
         android:padding="5dp">
 
         <ImageView
+            android:id="@+id/iconMusica"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/ic_music" />
 
         <TextView
+            android:id="@+id/textMusica"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Música adaptativa"

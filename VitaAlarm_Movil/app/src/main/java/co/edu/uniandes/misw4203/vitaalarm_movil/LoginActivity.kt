@@ -1,6 +1,8 @@
 package co.edu.uniandes.misw4203.vitaalarm_movil
 
 import android.os.Bundle
+import android.widget.Button
+import android.content.Intent
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +17,12 @@ class LoginActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val loginButton: Button = findViewById(R.id.btnLogin)
+        loginButton.setOnClickListener {
+            val intent = Intent(this, EscritorioActivity::class.java)
+            startActivity(intent)
         }
     }
 }
