@@ -2,6 +2,7 @@ package co.edu.uniandes.misw4203.vitaalarm_movil
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import co.edu.uniandes.misw4203.vitaalarm_movil.adapter.ProfileAdapter
 import co.edu.uniandes.misw4203.vitaalarm_movil.model.Profile
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class ProfilesActivity : FragmentActivity() {
 
@@ -41,6 +43,18 @@ class ProfilesActivity : FragmentActivity() {
 
         // Cambiar colores del menú inferior
         updateMenuColors()
+
+
+
+        // Referencia al botón de login
+        val boton = findViewById<FloatingActionButton>(R.id.fabAddProfile)
+
+
+        // Agregar el listener para navegar a OnboardingActivity
+        boton.setOnClickListener {
+            val intent = Intent(this, ProfileDetailActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun updateMenuColors() {
