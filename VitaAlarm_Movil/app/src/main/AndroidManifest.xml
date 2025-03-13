@@ -13,10 +13,10 @@
         android:theme="@style/Theme.VitaAlarm_movil"
         tools:targetApi="31">
         <activity
-            android:name=".ProfileDetailActivity"
+            android:name=".OnboardingActivity"
             android:exported="false" />
         <activity
-            android:name=".EscritorioActivity"
+            android:name=".ProfileDetailActivity"
             android:exported="false" />
         <activity
             android:name=".ProfilesActivity"
