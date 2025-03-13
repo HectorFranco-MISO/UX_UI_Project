@@ -1,5 +1,6 @@
 package co.edu.uniandes.misw4203.vitaalarm_movil
 
+import BaseActivity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -8,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class OnboardingActivity : AppCompatActivity() {
+class OnboardingActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
