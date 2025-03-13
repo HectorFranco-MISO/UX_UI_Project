@@ -16,6 +16,9 @@
             android:name=".OnboardingActivity"
             android:exported="false" />
         <activity
+            android:name=".ProfilesActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
