@@ -2,7 +2,6 @@ package co.edu.uniandes.misw4203.vitaalarm_movil
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -52,7 +51,7 @@ class ProfilesActivity : FragmentActivity() {
 
         // Agregar el listener para navegar a OnboardingActivity
         boton.setOnClickListener {
-            val intent = Intent(this, ProfileDetailActivity::class.java)
+            val intent = Intent(this, CreateProfileActivity::class.java)
             startActivity(intent)
         }
     }
