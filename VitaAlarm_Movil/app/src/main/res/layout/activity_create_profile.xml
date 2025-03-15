@@ -110,15 +110,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:hint="Agregar la ubicación"
-                app:boxStrokeColor="@color/blue_main"
+                android:hint="Seleccionar ubicación"
                 android:layout_marginTop="14dp"
+                app:boxStrokeColor="@color/blue_main"
                 app:boxBackgroundColor="@color/white">
 
-                <com.google.android.material.textfield.TextInputEditText
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
                     android:id="@+id/edtLocation"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="16dp"
+                    android:textSize="16sp"
+                    android:paddingHorizontal="12dp"
+                    android:background="?attr/editTextBackground"
+                    android:inputType="none"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <!-- Duración de la sesión -->
@@ -160,15 +165,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:hint="Agregar playlist"
+                android:hint="Seleccionar playlist"
                 android:layout_marginTop="14dp"
                 app:boxStrokeColor="@color/blue_main"
                 app:boxBackgroundColor="@color/white">
 
-                <com.google.android.material.textfield.TextInputEditText
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
                     android:id="@+id/edtPlaylist"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="16dp"
+                    android:textSize="16sp"
+                    android:paddingHorizontal="12dp"
+                    android:background="?attr/editTextBackground"
+                    android:inputType="none"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <!-- Botón Guardar -->
@@ -180,7 +190,7 @@
                 android:layout_marginTop="20dp">
 
                 <Button
-                    android:id="@+id/btnLogin"
+                    android:id="@+id/btnSaveProfile"
                     android:layout_width="200dp"
                     android:layout_height="55dp"
                     android:text="Guardar"
