@@ -63,6 +63,8 @@ La aplicación tiene el flujo de login y para su correcto funcionamiento en el c
 
 La aplicación puede ser instalada en un dispositivo con una versión igual o superiro a Android 5.0 (Lollipop) por medio del APK que está disponible en este release.
 
+La APK se puede encontrar dentro de la carpeta APK bajo el nombre **vita_alarm.apk**
+
 ## Funcionalidades realizadas
 
 ### Versión Web
