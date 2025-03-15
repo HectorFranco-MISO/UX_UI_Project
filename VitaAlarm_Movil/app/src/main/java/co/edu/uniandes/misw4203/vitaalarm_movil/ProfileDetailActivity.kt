@@ -9,6 +9,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.widget.Button
+import com.google.android.material.button.MaterialButton
+import mostrarToastPersonalizado
 
 class ProfileDetailActivity : AppCompatActivity() {
 
@@ -21,6 +24,24 @@ class ProfileDetailActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        // Referencias a los botones
+        val btnActivateProfile = findViewById<Button>(R.id.btnActiveProfile)
+        val btnDeleteProfile = findViewById<MaterialButton>(R.id.btnDeleteProfile)
+
+        // Listener para activar perfil
+        btnActivateProfile.setOnClickListener {
+            mostrarToastPersonalizado(this, "Perfil activado", true)
+            finish()
+        }
+
+        // Listener para eliminar perfil
+        btnDeleteProfile.setOnClickListener {
+            mostrarToastPersonalizado(this, "Perfil eliminado", false)
+            finish()
+        }
+
+
         // Recuperar el título del perfil pasado como extra
         val profileTitle = intent.getStringExtra("profileTitle")
         if (profileTitle != null) {
