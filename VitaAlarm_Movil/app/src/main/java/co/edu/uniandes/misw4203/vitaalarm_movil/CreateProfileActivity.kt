@@ -10,8 +10,10 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.textfield.MaterialAutoCompleteTextView
 import android.view.LayoutInflater
+import android.widget.Button
 import android.widget.NumberPicker
 import androidx.appcompat.app.AlertDialog
+import mostrarToastPersonalizado
 
 class CreateProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +25,13 @@ class CreateProfileActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        // Listener para activar perfil
+        val btnSaveProfile = findViewById<Button>(R.id.btnSaveProfile)
+        btnSaveProfile.setOnClickListener {
+            mostrarToastPersonalizado(this, "Perfil guardado", true)
+            finish()
         }
 
         // Capturar el campo de playlist
