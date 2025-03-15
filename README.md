@@ -92,8 +92,6 @@ En la versión web se desarrollaron dos funcionalidades principales, cada una co
 | <img src="https://github.com/user-attachments/assets/e90443cc-52a8-4627-9d24-9b1c5c43aacf" width="400" /> | <img src="https://github.com/user-attachments/assets/6a2da0dc-6862-4467-a101-e852a634a852" width="400" /> |
 
 
-
-
 ### Versión Móvil
 
 En la versión móvil se desarrollaron dos funcionalidades principales, cada una con sus respectivas pantallas:
@@ -110,6 +108,13 @@ En la versión móvil se desarrollaron dos funcionalidades principales, cada una
    - Pantalla de "Mis Perfiles" que muestra el listado de perfiles y permite agregar nuevos.
    - Pantalla de detalle de un perfil.
    - Pantalla de formulario para crear un nuevo perfil.
+  
+### Evidencias
+| | |
+|:---:|:---:|
+| <img width="200" alt="Captura 1" src="https://github.com/user-attachments/assets/27d4002c-5061-4dee-96f2-7662d239e342" /> | <img width="200" alt="Captura 2" src="https://github.com/user-attachments/assets/ab462148-3c63-4a87-9f55-02e8bead19ec" /> |
+| <img width="200" alt="Captura 3" src="https://github.com/user-attachments/assets/c2ad99d6-3a36-497b-a06c-083a98f87631" /> | <img width="200" alt="Captura 4" src="https://github.com/user-attachments/assets/2cd2fb39-f01b-424b-9972-b75e6559e133" /> |
+| <img width="200" alt="Captura 5" src="https://github.com/user-attachments/assets/d7534c8e-2169-4021-89c2-1ced9a3c86ba" /> | <img width="200" alt="Captura 6" src="https://github.com/user-attachments/assets/cd6bda4d-093c-475c-b2fd-ec613cf76361" /> |
 
 
 
