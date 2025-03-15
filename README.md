@@ -82,6 +82,17 @@ En la versión web se desarrollaron dos funcionalidades principales, cada una co
 2. **Alarmas Inteligentes**  
    Este flujo incluye 1 pantalla:
    - Pantalla de alarmas inteligentes, accesible desde la pantalla de escritorio principal.
+  
+
+### Evidencias
+| | |
+|:---:|:---:|
+| <img src="https://github.com/user-attachments/assets/e8dc3715-a201-4e36-9b50-a41030867fc3" width="400" /> | <img src="https://github.com/user-attachments/assets/67997ba5-80c7-4abf-bfd9-9697d38f6168" width="400" /> |
+| <img src="https://github.com/user-attachments/assets/18ab8ec6-f209-4239-b0b8-e79c18ae8677" width="400" /> | <img src="https://github.com/user-attachments/assets/be25258e-9eee-47bd-af95-d910c2a37212" width="400" /> |
+| <img src="https://github.com/user-attachments/assets/e90443cc-52a8-4627-9d24-9b1c5c43aacf" width="400" /> | <img src="https://github.com/user-attachments/assets/6a2da0dc-6862-4467-a101-e852a634a852" width="400" /> |
+
+
+
 
 ### Versión Móvil
 
@@ -99,6 +110,7 @@ En la versión móvil se desarrollaron dos funcionalidades principales, cada una
    - Pantalla de "Mis Perfiles" que muestra el listado de perfiles y permite agregar nuevos.
    - Pantalla de detalle de un perfil.
    - Pantalla de formulario para crear un nuevo perfil.
+
 
 
 
