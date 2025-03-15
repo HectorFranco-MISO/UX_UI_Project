@@ -1,0 +1,15 @@
+<section class="nav-bar">
+    <button class="nav-bar__logo" [ngClass]="{'hidden': isLoggedIn}">
+        <img class="logo" src="../../../../assets/logo.svg" alt="">
+        <img class="vitalarm" src="../../../../assets/vitalarm.svg" alt="">
+    </button>
+    <div class="nav-bar__menu" *ngIf="isLoggedIn || register">
+        <button *ngIf="!register" class="language">
+            <img src="../../../../assets/language.svg" alt="">
+        </button>
+        <button *ngIf="!register" class="user">
+            <img src="../../../../assets/user.svg" alt="">
+        </button>
+        <p-button *ngIf="register" label="Iniciar sesión" class="button" [routerLink]="'/'"></p-button>
+    </div>
+</section>

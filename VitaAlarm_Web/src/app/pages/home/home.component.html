@@ -1,0 +1,51 @@
+<div>
+    <app-nav-bar></app-nav-bar>
+
+    <section class="home">
+        <article class="home__content">
+            <img src="../../../assets/bienvenida.svg" alt="">
+
+            <h3>Tu nuevo espacio de productividad y bienestar. Usa alarmas inteligentes para enfocarte, equilibrar tu
+                tiempo y alcanzar tus metas.</h3>
+        </article>
+
+        <article class="home__login">
+            <h2>Bienvenido de vuelta</h2>
+            <form class="home__form">
+
+                <div class="field">
+                    <label for="nombre">Correo electrónico</label>
+                    <input id="nombre" pInputText type="text" placeholder="miguelmartinez@gmail.com">
+                </div>
+
+                <div class="field">
+                    <label for="password">Contraseña</label>
+                    <p-password id="password" [(ngModel)]="password" [toggleMask]="true" placeholder="Alemania2025*"
+                        class="full-width"></p-password>
+                </div>
+
+                <p-button label="Iniciar sesión" class="button" [routerLink]="'/escritorio'"></p-button>
+
+                <p-divider [align]="'center'">
+                    <div class="p-text-secondary">O ingresa con:</div>
+                </p-divider>
+
+                <div class="social">
+                    <button>
+                        <img src="../../../assets/facebook.svg" alt="">
+                    </button>
+                    <button>
+                        <img src="../../../assets/google.svg" alt="">
+                    </button>
+                </div>
+
+
+                <a href="/registro">
+                    ¿No tienes una cuenta? <span class="register-link">Regístrate</span>
+                </a>
+            </form>
+
+
+        </article>
+    </section>
+</div>

@@ -1,0 +1,50 @@
+<div>
+    <app-nav-bar [register]="true"></app-nav-bar>
+
+    <section class="register">
+        <button class="back-button" (click)="goBack()">
+            <i class="pi pi-arrow-left"></i> Atrás
+        </button>
+
+        <h2>Registro</h2>
+
+        <article class="register__form">
+            <form class="form">
+
+                <div class="field">
+                    <label for="nombre">¿Cómo te llamas?</label>
+                    <input id="nombre" [(ngModel)]="name" name="name" pInputText type="text" placeholder="Miguel Martínez">
+                    <!-- Mensaje de error si las contraseñas no coinciden -->
+                    <p class="error-text" *ngIf="name.length < 5">
+                        Debes ingresar tu nombre para registrarte
+                    </p>
+                </div>
+
+                <div class="field">
+                    <label for="password">Asigna una contraseña</label>
+                    <p-password id="password" [(ngModel)]="password" name="password"  [toggleMask]="true" placeholder="Alemania2025*"
+                        class="full-width"></p-password>
+                </div>
+
+                <div class="field">
+                    <label for="confirmPassword">Confirma la contraseña</label>
+                    <p-password id="confirmPassword" [(ngModel)]="confirmPassword" name="confirmPassword" 
+                        [toggleMask]="true" placeholder="Alemania2025*" class="full-width"></p-password>
+
+                    <!-- Mensaje de error si las contraseñas no coinciden -->
+                    <p class="error-text" *ngIf="password && confirmPassword && password !== confirmPassword">
+                        Las contraseñas no coinciden.
+                    </p>
+                </div>
+
+                <!-- Botón de registro deshabilitado si las contraseñas no coinciden -->
+                <p-button label="Registrarse" class="button" 
+                    [disabled]="!password || !confirmPassword || password !== confirmPassword || name.length < 5"
+                     (click)="register()">
+                </p-button>
+
+            </form>
+
+        </article>
+    </section>
+</div>

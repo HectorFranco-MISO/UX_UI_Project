@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Azul -->
+    <color name="blue_main">#3252F6</color>
+    <color name="blue_dark">#0017C1</color>
+    <color name="blue_light">#7A8BFC</color>
+    <color name="blue_extra_light">#C9CDFD</color>
+
+    <!-- Amarillo -->
+    <color name="yellow_main">#FFAE00</color>
+    <color name="yellow_dark">#FE8A04</color>
+    <color name="yellow_light">#FFD14D</color>
+    <color name="yellow_extra_light">#FFEAB2</color>
+
+    <!-- Gris -->
+    <color name="gray_main">#5E5E5F</color>
+    <color name="gray_dark">#1E1E1F</color>
+    <color name="gray_light">#BABABB</color>
+    <color name="gray_extra_light">#ECECED</color>
+
+    <!-- Estado -->
+    <color name="warning">#B3261E</color>
+    <color name="success">#009F75</color>
+
+    <!-- Básicos -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
 </resources>

@@ -1,0 +1,46 @@
+.nav-bar {
+  background-color: var(--blue-extra-light);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 34px;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 18px;
+
+    .logo {
+      max-height: 66px;
+    }
+
+    .vitalarm {
+      max-height: 42px;
+    }
+
+    &.hidden {
+      visibility: hidden;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 42px;
+
+    .language {
+      margin-top: 6px;
+
+      img {
+        max-height: 40px;
+      }
+    }
+
+    .user {
+      max-height: 60px;
+    }
+  }
+}

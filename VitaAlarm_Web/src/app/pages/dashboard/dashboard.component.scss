@@ -1,0 +1,210 @@
+.dashboard {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    &__content {
+        display: flex;
+        flex: 1;
+
+        section {
+            width: 100%;
+        }
+    }
+
+    app-side-bar {
+        width: 325px;
+        height: calc(100vh - 80px);
+    }
+
+    &__alarms {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        overflow: auto;
+
+        h2 {
+            font-size: 32px;
+            color: var(--yellow-main);
+            margin-bottom: 0;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        &__container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 20px;
+
+            .calendar {
+                width: 45%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .alarms__list {
+                width: 45%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+
+            .alarm {
+                position: relative; // Para que el toggle se ubique dentro del div
+                width: 100%;
+                background-color: var(--gray-extra-light);
+                border-radius: 16px;
+                padding: 8px 20px;
+
+                h4 {
+                    color: var(--gray-main);
+                    font-size: 20px;
+                    margin: 0;
+                    font-weight: 400;
+                }
+
+                .hour {
+                    font-family: 'Share Tech Mono', monospace;
+                    font-size: 30px;
+                    color: var(--gray-dark);
+                    margin: 0px;
+                }
+
+                p {
+                    margin: 0;
+                }
+
+                .toggle-switch {
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+                    transform: scale(1.2); // Ajusta el tamaño si es necesario
+                }
+            }
+        }
+    }
+
+    &__profiles {
+        @extend .dashboard__alarms;
+        gap: 16px;
+
+        &__header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .profile__card {
+            position: relative;
+            display: flex;
+            align-items: center;
+            background-color: var(--gray-extra-light);
+            border-radius: 16px;
+            gap: 16px;
+            padding: 16px 18px;
+            margin-inline: 16px;
+
+            .image {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--gray-light);
+                color: var(--gray-main);
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                font-size: 26px;
+            }
+
+            .text {
+                .title {
+                    font-size: 20px;
+                    color: var(--gray-dark);
+                    margin: 0;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 16px;
+                }
+            }
+
+            .active {
+                position: absolute;
+                right: 16px;
+                margin: 0;
+                bottom: 16px;
+                font-size: 14px;
+            }
+        }
+
+        .profile__card.active {
+            background-color: var(--blue-extra-light);
+            color: var(--blue-dark);
+
+        }
+
+        .profile__card.active .image {
+            background-color: var(--blue-light);
+            color: var(--blue-dark);
+        }
+
+        .profile__card.active .text .title {
+            color: var(--blue-dark);
+
+        }
+
+    }
+}
+
+.dashboard__title {
+    font-size: 32px;
+    color: var(--yellow-main);
+    margin: 0;
+
+}
+
+::ng-deep .dashboard__alarms__container {
+    position: relative; // Para que el FAB se posicione respecto a este contenedor
+    padding-bottom: 60px; // Espacio para el botón
+}
+
+::ng-deep .fab {
+    position: absolute;
+    bottom: 74px;
+    right: 60px;
+    width: 56px;
+    height: 56px;
+    background-color: var(--yellow-dark);
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &:hover {
+        background-color: var(--yellow-main);
+    }
+}
+
+::ng-deep .p-button.p-button-icon-only {
+    background-color: transparent !important;
+    /* Verde */
+    border-color: transparent !important;
+    color: var(--yellow-dark) !important;
+    padding: 0;
+}

@@ -1,0 +1,31 @@
+<div class="alarms__container">
+    <app-nav-bar [isLoggedIn]="true"></app-nav-bar>
+
+    <div class="alarms__content">
+        <app-side-bar></app-side-bar>
+        <section>
+            <article class="alarms__section">
+                <h2 class="alarms__title">Alarmas inteligentes</h2>
+                <p>Las alarmas inteligentes te ayudarán a monitorear y mantener hábitos saludables.</p>
+
+                <div class="alarms__report">
+                    <img src="../../../assets/ai-alarms.svg" alt="">
+                    <div>
+                        <p>Consulta los reportes generados por las alarmas inteligentes en tu dispositivo móvil</p>
+                        <p-button label="Generar reporte" class="button"></p-button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="alarms__section">
+                <div class="chat__container">
+
+                    <h3 class="title">Chat de alarmas</h3>
+                    <textarea pInputTextarea rows="4" cols="30" style="width: 100%"
+                        placeholder="Pregúntale algo a la IA sobre tus recordatorios o rutinas"></textarea>
+                </div>
+            </article>
+
+        </section>
+    </div>
+</div>

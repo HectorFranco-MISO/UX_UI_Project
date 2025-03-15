@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="4dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="4dp">
+
+    <!-- Botón 1: Mis perfiles -->
+    <LinearLayout
+        android:id="@+id/btnMisPerfiles"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iconMisPerfiles"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_profiles"
+            app:tint="@color/gray_dark" />
+
+        <TextView
+            android:id="@+id/textMisPerfiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mis perfiles"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Botón 2: Integraciones -->
+    <LinearLayout
+        android:id="@+id/btnIntegraciones"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iconIntegraciones"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_integrations" />
+
+        <TextView
+            android:id="@+id/textIntegraciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Integraciones"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Botón 3: AI -->
+    <LinearLayout
+        android:id="@+id/btnAI"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iconAI"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_ai" />
+
+        <TextView
+            android:id="@+id/textAI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Botón 4: Música Adaptativa -->
+    <LinearLayout
+        android:id="@+id/btnMusica"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iconMusica"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_music" />
+
+        <TextView
+            android:id="@+id/textMusica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Música adaptativa"
+            android:textSize="12sp"
+            android:ellipsize="end"
+            android:maxLines="1" />
+    </LinearLayout>
+
+</LinearLayout>
