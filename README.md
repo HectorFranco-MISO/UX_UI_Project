@@ -63,6 +63,41 @@ La aplicación tiene el flujo de login y para su correcto funcionamiento en el c
 
 La aplicación puede ser instalada en un dispositivo con una versión igual o superiro a Android 5.0 (Lollipop) por medio del APK que está disponible en este release.
 
+## Funcionalidades realizadas
+
+### Versión Web
+
+En la versión web se desarrollaron dos funcionalidades principales, cada una con sus respectivas pantallas:
+
+1. **Registrarse**  
+   Este flujo incluye 5 pantallas:
+   - Pantalla de bienvenida.
+   - Formulario de registro con dos opciones: continuar con correo electrónico o con redes sociales.
+   - Formulario de correo electrónico para completar los datos del usuario.
+   - Pantalla de vinculación para el caso de registro con redes sociales.
+   - Escritorio o pantalla principal después del registro exitoso.
+
+2. **Alarmas Inteligentes**  
+   Este flujo incluye 1 pantalla:
+   - Pantalla de alarmas inteligentes, accesible desde la pantalla de escritorio principal.
+
+### Versión Móvil
+
+En la versión móvil se desarrollaron dos funcionalidades principales, cada una con sus respectivas pantallas:
+
+1. **Iniciar Sesión**  
+   Este flujo incluye 3 pantallas:
+   - Pantalla de bienvenida.
+   - Formulario de inicio de sesión.
+   - Pantalla inicial de la aplicación después del inicio de sesión exitoso.
+
+2. **Mis Perfiles**  
+   Este flujo incluye 3 pantallas:
+   - Pantalla de inicio de la aplicación.
+   - Pantalla de "Mis Perfiles" que muestra el listado de perfiles y permite agregar nuevos.
+   - Pantalla de detalle de un perfil.
+   - Pantalla de formulario para crear un nuevo perfil.
+
 
 
 
